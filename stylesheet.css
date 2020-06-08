@@ -3,9 +3,6 @@
   src: url(drukwidebold.otf);
 }
 
-.wrapper{
-  padding:2%;
-}
 
 .blackdotbackground{
   background-image: url(images/black.png);
@@ -44,7 +41,7 @@ h1{
 }
 
 .head{
-  height: 80%;
+  height: 100%;
   width: 100%;
   padding-top: 20%;
   z-index: 9999;
@@ -168,14 +165,18 @@ font-size: 45px;
   font-size: 50px;
   text-transform: uppercase;
   font-family: drukwide;
-margin-top: 10%;
-  padding-bottom: 5%;
+  z-index: 9999;
+  position: absolute;
 
 
 
 
 }
-
+li :hover {
+  color: #000;
+  -webkit-text-stroke-width:2.5px;
+  -webkit-text-stroke-color:white;
+}
 li{
   color: #fff;
   padding-top: 3%;
@@ -360,6 +361,20 @@ section h1 {
   width: 100%;
   height: 100%;
   background-color: ;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+#particles-js2 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: black ;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;

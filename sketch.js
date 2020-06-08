@@ -15,9 +15,5 @@ function setup() {
 
 
   }
-
-
   save("grid.png");
-
-
 }
