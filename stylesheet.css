@@ -14,13 +14,27 @@ h1{
 
 }
 
+.head{
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
 
 .monotone{
     padding-left:2%;
     padding-right:2%;
     background-color: #fff;
     color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+
+
 }
+
+
 
 .monotone2{
     background-color: #000;
@@ -40,13 +54,7 @@ h1{
 
 }
 
-.head{
-  height: 100%;
-  width: 100%;
-  padding-top: 20%;
-  z-index: 9999;
-  position: absolute;
-}
+
 
 .scrolldown{
   height: 20%;
@@ -356,7 +364,6 @@ section h1 {
 
 
 #particles-js {
-  position: relative;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -370,7 +377,6 @@ section h1 {
 
 
 #particles-js2 {
-  position: relative;
   z-index: 1;
   width: 100%;
   height: 100%;
