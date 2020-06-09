@@ -122,11 +122,6 @@ particlesJS("particles-js2", {
 });
 
 
-
-var h =document.querySelector('h1');
-var p= h.getBoundingClientRect();
-var c= document.querySelector('.cursor');
-
 document.body.onmousemove = function(e) {
   /*Adjust the position of the cursor*/
   c.style.left=e.clientX-20+'px';
