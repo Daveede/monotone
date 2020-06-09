@@ -4,10 +4,6 @@
 }
 
 
-.blackdotbackground{
-  background-image: url(images/black.png);
-}
-
 h1{
   font-family: drukwide;
   font-size: 100px;
@@ -29,7 +25,6 @@ h1{
     top: 50%;
     transform: translateY(-50%);
     margin: 0 auto;
-
 
 }
 
@@ -78,7 +73,7 @@ color: #fff;
 font-size: 40px;
 position: relative;
 display: block;
-min-width: 30%;
+min-width: 35%;
 
 }
 
@@ -383,6 +378,7 @@ section h1 {
   z-index: 1;
   width: 100%;
   height: 100%;
+  min-height: infinite;
   background-color: black ;
   background-image: url("");
   background-repeat: no-repeat;
@@ -390,10 +386,15 @@ section h1 {
   background-position: 50% 50%;
 }
 
-
+.backgroundblack{
+  width: 100%;
+  height: 2000px !important;
+  display: flex;
+  align-items: stretch;
+}
 
 body {
-  cursor:none !important;
+  /*cursor:none !important;*/
 }
 h1 {
   margin:50px;
