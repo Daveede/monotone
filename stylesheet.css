@@ -54,7 +54,6 @@ h1{
 }
 
 
-
 .scrolldown{
   height: 20%;
   width: 100%;
@@ -67,6 +66,7 @@ h1{
   width:100%;
   margin: 0px;
   padding: 0px;
+  display: flex;
   background-image: url(images/black.png);
 }
 
@@ -76,6 +76,9 @@ padding-left: 3%;
 font-family: drukwide;
 color: #fff;
 font-size: 40px;
+position: relative;
+display: block;
+min-width: 30%;
 
 }
 
@@ -103,8 +106,6 @@ font-style: italic;
 
 }
 
-
-
 .title{
   padding: 0%;
   padding-bottom: 5%
@@ -120,7 +121,6 @@ background-color: #000;
   text-align: left;
   margin-top: 10%;
   font-family: drukwide;
-
 }
 
 .card{
@@ -146,10 +146,14 @@ background-color: #000;
 }
 
 .artwork{
-padding: 4%;
+display: block;
+align-items:center;
+margin-top: 5%;
+margin-left: 5%;
+max-width: 40%;
 font-family: drukwide;
 color: #fff;
-font-size: 45px;
+
 }
 
 
