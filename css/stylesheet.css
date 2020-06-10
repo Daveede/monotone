@@ -4,6 +4,12 @@
 }
 
 
+body {
+  background-color: white;
+  cursor: none !important;
+  overflow-x: hidden;
+}
+
 h1{
   font-family: drukwide;
   font-size: 100px;
@@ -11,9 +17,9 @@ h1{
 }
 
 .head{
-  height: 100%;
-  width: 100%;
+  height: 100vh;
   position: relative;
+  z-index: 1;
 
 }
 
@@ -326,41 +332,10 @@ section h1 {
   animation: sdb10 2s infinite;
   box-sizing: border-box;
 }
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 
 
+/*
 #particles-js {
   z-index: 1;
   width: 100%;
@@ -385,6 +360,7 @@ section h1 {
   background-size: cover;
   background-position: 50% 50%;
 }
+*/
 
 .backgroundblack{
   width: 100%;
@@ -409,9 +385,27 @@ h1 {
   position:absolute;
   width:40px;
   height:40px;
-  background:#000;
+  background:black;
   border-radius:50%;
-  top:-40px;
-  left:-40px;
-  z-index:9999;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+mix-blend-mode: difference;
+filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+#defaultCanvas0 {
+position: absolute;
+z-index: 0;
+width: ;
+height:
+
 }
