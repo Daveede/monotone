@@ -38,7 +38,7 @@ function setup() {
   var canvas;
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
-  canvas.style('z-index', '-1');
+  canvas.style('z-index', '0');
   for(let i = 0;i<width/6;i++){
     particles.push(new Particle());
   }
