@@ -32,6 +32,7 @@ a :hover{
   color: white !important;
   text-decoration: none !important;
   background-color: black !important;
+  cursor: pointer !important;
 }
 
 
@@ -236,7 +237,7 @@ color: #000;
   font-size: 20px;
   text-align: left;
   margin-top: 10%;
-  font-family: drukwide;
+  font-family: 'Druk wide';
   color:#fff;
 
 }
