@@ -201,18 +201,16 @@ top:0;
   right:0%;
 }
 
-.rightcolumn p{
+.rightcolumn a{
   background-color: #000;
 }
 
 .menuvoice{
   margin-top: 30%;
-
 }
 
-.menuvoice p{
+.menuvoice a{
   background-color: #000;
-
 }
 
 .title{
