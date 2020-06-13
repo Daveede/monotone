@@ -1,11 +1,12 @@
 
 // an array to add multiple particles
 let particles2 = [];
+var canvasBlack;
 
 function setup() {
-  var canvasBlack;
   canvasBlack = createCanvas(windowWidth, windowHeight);
   canvasBlack.parent('bg-black');
+
   for(let i = 0;i<width/6;i++){
     particles.push(new Particle());
   }

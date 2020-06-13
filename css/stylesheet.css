@@ -83,7 +83,7 @@ a:hover{
   height: auto;
   position: absolute;
   opacity: 0;
-  transition: all .25s ease-in-out;
+  transition: all .45s ease-in-out;
 
 }
 
@@ -148,6 +148,9 @@ width: 100vw;
   display: flex;
 }
 
+.graphic-list{
+padding: 0 ;
+}
 .card-body{
   display: flex;
 }
@@ -276,11 +279,9 @@ color: #fff;
 
 .artlist{
   width: 100%;
-  color: #fff;
   font-size: 50px;
   text-transform: uppercase;
   z-index: 1;
-  background-color: black;
 }
 
 li :hover {
@@ -433,13 +434,8 @@ section h1 {
 
 
 
-.backgroundblack{
+#bg-black {
+z-index: 9999;
 width: 100%;
-background-color: black;
-}
-
-
-.bg-black {
-  width: 100%;
-  z-index: 0;
+height: 100%;
 }
