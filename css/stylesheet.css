@@ -188,6 +188,7 @@ font-size: 60px;
 font-style:italic;
 position: absolute;
 right: -100%;
+opacity: 0;
 top:20%;
 
 }
@@ -195,8 +196,8 @@ top:20%;
 .enter-left{
   position: absolute;
   right:5%;
+  opacity: 1;
 }
-
 
 .menuvoice{
   padding-top: 5%;
