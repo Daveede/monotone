@@ -4,7 +4,6 @@ var canvasWhite;
 function setup() {
   createWhite = createCanvas(windowWidth, windowHeight);
   canvasWhite.parent('bg-white');
-
   background('white');
   stroke('black');
 
