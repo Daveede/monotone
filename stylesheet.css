@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+
+
+@font-face {
+  font-family: 'Druk Wide';
+  src: url('../font/DrukWide-Bold.eot');
+  src: url('../font/DrukWide-Bold.woff');
+  src: url('../font/DrukWide-Bold.woff2');
+  src: url('../font/DrukWide-Bold.svg');
+  src: url('../font/DrukWide-Bold.ttf');
+
+}
+*{
+  font-family:'Druk Wide';
+  transition: all. 25s ease-in-out;
+}
+
+body {
+  background-color: white;
+  /*cursor:none !important;*/
+  overflow-x: hidden;
+}
+
+.black{
+  background-color: black;
+}
+
+.monotone h1{
+  margin:50px;
+  color:white;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color:black;
+}
+
+.monotone h1 :hover{
+    -webkit-text-fill-color:black;
+    color:black;
+    -webkit-text-stroke-color:black;
+}
+
+.cursor{
+  position:absolute;
+  width:40px;
+  height: 40px;
+  background-color: black;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  mix-blend-mode: difference;
+  filter: invert(1);
+}
+
+.cursor.big{
+  width: 80px;
+  height: 80px;
+}
+
+.list-item img{
+
+  width:150px;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: all .25s ease-in-out;
+
+}
+
+.list-item img{
+
+  width:150px;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: all .25s ease-in-out;
+
+}
+
+.list-item.left img{
+  left:-100%;
+  transform:rotateZ();
+}
+
+.list-item.right img{
+  right:-100%;
+  transform:rotateZ();
+}
+
+.list-item:focus{
+  outline: 0;
+}
+
+.list-item.left:hover img{
+  left: 20%;
+  opacity: 1;
+}
+
+.list-item.right:hover img{
+  right: 20%;
+  opacity: 1;
+}
+
+
+h1{
+  font-family: drukwide;
+  font-size: 100px;
+
+}
+
+.head{
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.monotone{
+    padding-left:2%;
+    padding-right:2%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+
+}
+
+
+
+.monotone2{
+    background-color: #000;
+}
+
+.cardcontainer{
+  display: flex;
+}
+
+.card-body{
+  display: flex;
+
+}
+
+.cardrow{
+  margin-top: 5%;
+
+}
+
+
+.scrolldown{
+  height: 20%;
+  width: 100%;
+  padding-top: 50%;
+  z-index: 9998;
+  position: absolute;
+}
+
+.detail{
+  width:100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  background-image: url(images/black.png);
+}
+
+.leftcolumn{
+padding-top: 3%;
+padding-left: 3%;
+font-family: drukwide;
+color: #fff;
+font-size: 40px;
+position: relative;
+display: block;
+min-width: 35%;
+
+}
+
+.rightcolumn{
+padding-top: 5%;
+padding-left: 8%;
+font-family: drukwide;
+color: #fff;
+font-size: 60px;
+font-style: italic;
+
+}
+
+.rightcolumn p{
+  background-color: #000;
+}
+
+.menuvoice{
+  margin-top: 30%;
+
+}
+
+.menuvoice p{
+  background-color: #000;
+
+}
+
+.title{
+  padding: 0%;
+  padding-bottom: 5%
+}
+
+.title p{
+background-color: #000;
+}
+
+.artist{
+  padding:0px;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10%;
+  font-family: drukwide;
+}
+
+.card{
+  background-color: #000;
+}
+
+.cardtitle{
+  padding:0px;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10%;
+  font-family: drukwide;
+  color:#fff;
+
+}
+
+.artist p{
+  background-color: #000;
+}
+
+.description p{
+  background-color: #000;
+}
+
+.artwork{
+display: block;
+align-items:center;
+margin-top: 5%;
+margin-left: 5%;
+max-width: 40%;
+font-family: drukwide;
+color: #fff;
+
+}
+
+
+.description{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: helvetica;
+  font-size: 16px;
+  color: #fff;
+}
+
+.detailrow{
+  height: 100%;
+
+}
+
+.artlist{
+  width: 100%;
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: drukwide;
+  z-index: 9998;
+  position: absolute;
+
+
+
+
+}
+li :hover {
+  color: #000;
+  -webkit-text-stroke-width:2.5px;
+  -webkit-text-stroke-color:white;
+}
+li{
+  color: #fff;
+  padding-top: 3%;
+}
+
+ol {
+  background-color: #000
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) "  ";
+  color: #fff ;
+  font-weight: bold;
+  font-size: 20px;
+  vertical-align: super;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: #000;
+  padding-right:1%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position:relative;
+  width: 100%;
+  height: 22%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+#thanks {
+  background-color: ;
+}
+#thanks::after {
+  content: none;
+}
+#thanks div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#thanks h2 {
+  margin-bottom: 60px;
+  color: #333;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+#thanks p {
+  color: #333;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+#thanks p a {
+  color: #333;
+  text-decoration: none;
+  transition: color .3s;
+}
+#thanks p a:hover {
+  color: #888;
+}
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #000;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+
+#section10 a {
+  background-color: ;
+
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+#particles-js {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: ;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+#particles-js2 {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: infinite;
+  background-color: black ;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.backgroundblack{
+  width: 100%;
+  height: 2000px !important;
+  display: flex;
+  align-items: stretch;
+}
+
+
+h1 {
+  margin:50px;
+  background: radial-gradient(circle at var(--x,-40px) var(--y,-40px), #fff 20px,black 21px);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+.cursor {
+  position:absolute;
+  width:40px;
+  height:40px;
+  background:#000;
+  border-radius:50%;
+  top:-40px;
+  left:-40px;
+  z-index:9999;
+}
