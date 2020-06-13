@@ -1,6 +1,3 @@
-// INIZIO BACKGROUND PARTICELLARE BIANCO
-
-// this class describes the properties of a single particle.
 class Particle {
 // setting the co-ordinates, radius and the
 // speed of a particle in both the co-ordinates axes.

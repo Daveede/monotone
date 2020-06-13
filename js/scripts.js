@@ -28,7 +28,7 @@ li.on("mouseleave", function( event ) {
 });
 
 $( 'a' ).on( "click", function() {
-    $('body').fadeOut(1000);
+    $('body').fadeOut(2000);
   });
 
 }) ;

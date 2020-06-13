@@ -19,7 +19,8 @@
 body {
   background-color: white;
   cursor:none !important;
-  overflow-x: hidden;
+  margin: 0;
+  /*overflow-x: hidden;*/
 }
 
 a:link{
@@ -278,6 +279,8 @@ color: #fff;
   color: #fff;
   font-size: 50px;
   text-transform: uppercase;
+  z-index: 1;
+  background-color: black;
 }
 
 li :hover {
@@ -433,4 +436,10 @@ section h1 {
 .backgroundblack{
 width: 100%;
 background-color: black;
+}
+
+
+.bg-black {
+  width: 100%;
+  z-index: 0;
 }
