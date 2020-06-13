@@ -175,14 +175,30 @@ display: block;
 
 }
 
+.leftcolumn .inner-wrapper{
+padding-top: 3%;
+padding-left: 3%;
+
+position: absolute;
+left:50%;
+transform: translateX(-50%) translateY(-50%);
+}
+
 .rightcolumn{
 padding-top: 5%;
 padding-left: 8%;
 font-family: drukwide;
 color: #fff;
 font-size: 60px;
-font-style: italic;
+font-style:italic;
+position: absolute;
+right: -100%;
+top:0;
 
+}
+
+.rightcolumn-enter-left{
+  right:0%;
 }
 
 .rightcolumn p{
@@ -244,7 +260,7 @@ align-items:center;
 margin-top: 5%;
 margin-left: 5%;
 max-width: 40%;
-font-family: drukwide;
+font-family: 'Druk Wide';
 color: #fff;
 
 }
@@ -268,14 +284,8 @@ color: #fff;
   color: #fff;
   font-size: 50px;
   text-transform: uppercase;
-  font-family: drukwide;
-  z-index: 9998;
-  position: absolute;
-
-
-
-
 }
+
 li :hover {
   color: #000;
   -webkit-text-stroke-width:2.5px;
@@ -306,7 +316,6 @@ ol li::before {
   padding-right:1%;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 * {
   margin: 0;
   padding: 0;
