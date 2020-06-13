@@ -10,9 +10,9 @@ setInterval (function(){
 
 var cursor = $('.cursor');
 
-$( window ).on("mousemove", function( event ){
+$( window ).on( "mousemove", function( event ){
   cursor.css("left", event.pageX);
-  cursor.css("right", event.pageY);
+  cursor.css("top", event.pageY );
   });
 
 
