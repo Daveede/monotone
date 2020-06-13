@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 setInterval (function(){
-  $('.rightcolumn').addClass('.enter-left');
+  $('.rightcolumn').addClass('enter-left');
 }, 2000);
 
 
@@ -14,6 +14,8 @@ $( window ).on("mousemove", function( event ){
   cursor.css("left", event.pageX);
   cursor.css("right", event.pageY);
   });
+
+
 
 var li = $('span.monotone2');
 

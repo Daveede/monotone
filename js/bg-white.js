@@ -1,4 +1,4 @@
-var inc = 20;
+var inc = 40;
 var canvasWhite;
 
 function setup() {
