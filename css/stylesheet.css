@@ -14,7 +14,7 @@
 
 *{
   font-family:'Druk Wide';
-  transition: all. 25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 body {
@@ -57,12 +57,11 @@ a :hover{
   position:absolute;
   width:40px;
   height: 40px;
-  background-color: black;
+  background: black;
   border-radius:50%;
   top:50%;
   left:50%;
   transform: translateX(-50%) translateY(-50%);
-  z-index: 9999;
 
   mix-blend-mode: difference;
   filter: invert(1);
@@ -91,7 +90,7 @@ a :hover{
 
 .list-item.right img{
   right:-100%;
-  transform:rotateZ(45deg);
+  transform:rotateZ(-45deg);
 }
 
 .list-item:focus{
@@ -125,16 +124,16 @@ font-size: 100px;
 .head{
   height: 100vh;
   position: relative;
-z-index: 1;
+  z-index: 1;
 }
 
-.monotone{
+.monotone {
 color: white;
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
 margin: 0 auto;
-width: 100vh;
+width: 100vw;
 }
 
 .monotone2 {
@@ -148,12 +147,10 @@ width: 100vh;
 
 .card-body{
   display: flex;
-
 }
 
 .cardrow{
   margin-top: 5%;
-
 }
 
 
@@ -176,21 +173,18 @@ width: 100vh;
 }
 
 .leftcolumn{
-
 font-family: drukwide;
 color: #fff;
 font-size: 40px;
 position: relative;
 display: block;
-
 }
 
 .leftcolumn .inner-wrapper{
 padding-top: 3%;
 padding-left: 3%;
-
 position: absolute;
-left:50%;
+left: 50%;
 top: 50%;
 transform: translateX(-50%) translateY(-50%);
 }
@@ -208,7 +202,7 @@ top:20%;
 
 }
 
-.enter-left{
+.rightcolumn.enter-left{
   right:0%;
 }
 

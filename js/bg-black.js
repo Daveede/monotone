@@ -3,8 +3,7 @@ var canvasBlack;
 
 function setup() {
   createBlack = createCanvas(windowWidth, windowHeight);
-  canvasWhite.parent('bg-black');
-
+  canvasBlack.parent('bg-black');
   background('black');
   stroke('white');
 
