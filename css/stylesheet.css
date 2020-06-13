@@ -132,6 +132,11 @@ body {
 
 .monotone2{
     background-color: #000;
+    color: white;
+}
+
+.monotone2 a: hover{
+  text-decoration: none;
 }
 
 .cardcontainer{
