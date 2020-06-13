@@ -22,19 +22,20 @@ body {
   overflow-x: hidden;
 }
 
-a{
-  color:white;
+a:link{
+  color: white !important;
   text-decoration: none;
   background-color: black;
 }
 
-a :hover{
-  color: white !important;
+a:hover{
+  color: black !important;
+ -webkit-text-stroke-color:white;
+  -webkit-text-stroke-width:2px;
   text-decoration: none !important;
   background-color: black !important;
   cursor: pointer !important;
 }
-
 
 .black{
   background-color: black;
