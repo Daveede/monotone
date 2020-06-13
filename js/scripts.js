@@ -28,5 +28,5 @@ li.on("mouseleave", function( event ) {
 $( 'a' ).on( "click", function() {
     $('body').fadeOut(1000);
   });
-  
+
 }) ;
