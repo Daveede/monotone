@@ -25,6 +25,16 @@ body {
   background-color: black;
 }
 
+.link {
+    background-color: #000;
+    color: white;
+}
+
+.link :hover{
+  text-decoration: none !important;
+  color:white !important;
+}
+
 .monotone h1{
   margin:50px;
   color:white;
@@ -129,15 +139,6 @@ body {
 }
 
 
-
-.monotone2{
-    background-color: #000;
-    color: white;
-}
-
-.monotone2 a: hover{
-  text-decoration: none;
-}
 
 .cardcontainer{
   display: flex;
