@@ -7,6 +7,9 @@
   src: url('../font/DrukWide-Bold.woff2');
   src: url('../font/DrukWide-Bold.svg');
   src: url('../font/DrukWide-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 *{
@@ -22,16 +25,6 @@ body {
 
 .black{
   background-color: black;
-}
-
-.link {
-    background-color: #000;
-    color: white;
-}
-
-.link :hover{
-  text-decoration: none !important;
-  color:white !important;
 }
 
 .monotone h1{
@@ -66,15 +59,6 @@ body {
   height: 80px;
 }
 
-.list-item img{
-
-  width:150px;
-  height: auto;
-  position: absolute;
-  opacity: 0;
-  transition: all .25s ease-in-out;
-
-}
 
 .list-item img{
 
@@ -88,12 +72,12 @@ body {
 
 .list-item.left img{
   left:-100%;
-  transform:rotateZ();
+  transform:rotateZ(45deg);
 }
 
 .list-item.right img{
   right:-100%;
-  transform:rotateZ();
+  transform:rotateZ(45deg);
 }
 
 .list-item:focus{
@@ -119,25 +103,29 @@ body {
   height:100%;
 }
 
-.head{
-  height: 100%;
-  width: 100%;
-  position: relative;
+h1{
+font-family: 'Druk Wide';
+font-size: 100px;
+}
 
+.head{
+  height: 100vh;
+  position: relative;
+z-index: 1;
 }
 
 .monotone{
-    padding-left:2%;
-    padding-right:2%;
-    color: black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-
+color: white;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+margin: 0 auto;
+width: 100vh;
 }
 
-
+.monotone2 {
+  background-color: #000;
+}
 
 .cardcontainer{
   display: flex;
@@ -186,6 +174,7 @@ padding-left: 3%;
 
 position: absolute;
 left:50%;
+top: 50%;
 transform: translateX(-50%) translateY(-50%);
 }
 
@@ -206,7 +195,7 @@ top:0;
   right:0%;
 }
 
-.rightcolumn a{
+.rightcolumn p{
   background-color: #000;
 }
 
@@ -214,7 +203,7 @@ top:0;
   margin-top: 30%;
 }
 
-.menuvoice a{
+.menuvoice p{
   background-color: #000;
 }
 
@@ -436,35 +425,10 @@ section h1 {
   animation: sdb10 2s infinite;
   box-sizing: border-box;
 }
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+
+
+
+.backgroundblack{
+width: 100%;
+background-color: black;
 }
