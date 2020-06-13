@@ -30,9 +30,9 @@ a{
 }
 
 a :hover{
-  color:white !important;
+  color: white !important;
   text-decoration: none !important;
-    background-color: black !important;
+  background-color: black !important;
 }
 
 
