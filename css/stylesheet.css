@@ -194,13 +194,25 @@ top:20%;
 }
 
 .enter-left{
-  right:0%;
+  position: absolute;
+  right:5%;
 }
 
 
-.menuvoice p{
-  background-color: #000;
+.menuvoice{
+  padding-top: 5%;
+  padding-left: 40%;
 }
+
+.active{
+padding-left: 0%;
+color: #000;
+-webkit-text-stroke-width:2.5px;
+-webkit-text-stroke-color:white;
+
+}
+
+
 
 .back{
   position: absolute;
