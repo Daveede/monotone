@@ -49,6 +49,7 @@ body {
   top:50%;
   left:50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: 9999;
 
   mix-blend-mode: difference;
   filter: invert(1);
@@ -125,6 +126,7 @@ width: 100vh;
 
 .monotone2 {
   background-color: #000;
+  color: white;
 }
 
 .cardcontainer{
