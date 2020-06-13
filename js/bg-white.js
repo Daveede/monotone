@@ -1,19 +1,53 @@
-var inc = 40;
-var canvasWhite;
+// INIZIO BACKGROUND PARTICELLARE BIANCO
+
+// this class describes the properties of a single particle.
+class Particle {
+// setting the co-ordinates, radius and the
+// speed of a particle in both the co-ordinates axes.
+  constructor(){
+    this.x = random(0,width);
+    this.y = height+4;
+    this.r = 4;
+    this.xSpeed = random(-2,1.5);
+    this.ySpeed = random(-1,1.5);
+  }
+
+// creation of a particle.
+  createParticle() {
+    noStroke();
+    fill('black');
+    circle(this.x,this.y,this.r);
+  }
+
+// setting the particle in motion.
+  moveParticle() {
+    if(this.x < 0 || this.x > width)
+      this.xSpeed*=-1;
+    if(this.y < 0)
+      ;
+    this.x+=this.xSpeed;
+    this.y+=this.ySpeed;
+  }
+
+}
+
+// an array to add multiple particles
+let particles = [];
 
 function setup() {
-  createWhite = createCanvas(windowWidth, windowHeight);
-  canvasWhite.parent('bg-white');
+  var canvas;
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index', '-1');
+  for(let i = 0;i<width/6;i++){
+    particles.push(new Particle());
+  }
+}
+
+function draw() {
   background('white');
-  stroke('black');
-
-  for(let x = 0; x <= width; x+=inc) {
-
-
-    for(let y = 0; y <= height; y+=inc) {
-
-      point(x,y);
-
-    }
+  for(let i = 0;i<particles.length;i++) {
+    particles[i].createParticle();
+    particles[i].moveParticle();
   }
 }
