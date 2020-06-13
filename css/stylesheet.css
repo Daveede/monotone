@@ -161,7 +161,6 @@ width: 100vw;
   padding: 0px;
   display: flex;
   align-items: center;
-  background-image: url(images/black.png);
 }
 
 .leftcolumn{
@@ -184,7 +183,6 @@ transform: translateX(-50%) translateY(-50%);
 .rightcolumn{
 padding-top: 5%;
 padding-left: 8%;
-font-family: drukwide;
 color: #fff;
 font-size: 60px;
 font-style:italic;
@@ -194,7 +192,7 @@ top:20%;
 
 }
 
-.rightcolumn.enter-left{
+.enter-left{
   right:0%;
 }
 
@@ -212,7 +210,7 @@ top:20%;
 }
 .artist{
   padding:0px;
-  font-size: 20px;
+  font-size: 40px;
   text-align: left;
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 setInterval (function(){
-  $('.rightcolumn').addClass('enter-left');
+  $('.rightcolumn').addClass('.enter-left');
 }, 2000);
 
 
