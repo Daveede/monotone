@@ -26,7 +26,6 @@ body {
 a:link{
   color: white !important;
   text-decoration: none;
-  background-color: black;
 }
 
 a:hover{
@@ -34,7 +33,6 @@ a:hover{
  -webkit-text-stroke-color:white;
   -webkit-text-stroke-width:2px;
   text-decoration: none !important;
-  background-color: black !important;
   cursor: pointer !important;
 }
 
@@ -170,6 +168,8 @@ padding: 0 ;
   padding: 0px;
   display: flex;
   align-items: center;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .leftcolumn{
@@ -224,8 +224,6 @@ color: #000;
   position: absolute;
   top:5%;
   left:2%;
-  min-width: 100%;
-  min-height: 100%;
   color: white!important;
 }
 
@@ -285,6 +283,7 @@ color: #fff;
   font-size: 50px;
   text-transform: uppercase;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 li :hover {
