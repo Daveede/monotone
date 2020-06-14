@@ -23,6 +23,7 @@ body {
   cursor:none !important;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 a:link{
@@ -38,9 +39,6 @@ a:hover{
   cursor: pointer !important;
 }
 
-.black{
-  background-color: black;
-}
 
 .monotone h1{
   margin:50px;
@@ -116,17 +114,6 @@ a:hover{
 }
 
 
-#bg-whites{
-  width:100%;
-  height:100%;
-  display: block;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left:0;
-  z-index: -9999;
-}
-
 h1{
 font-family: 'Druk Wide';
 font-size: 100px;
@@ -147,7 +134,6 @@ width: 100vw;
 }
 
 .monotone2 {
-  background-color: #000;
   color: white;
 }
 
@@ -183,33 +169,38 @@ background-color: black;
 padding-top: 5%;
 padding-left: 8%;
 color: #fff;
-font-size: 60px;
+font-size: 40px;
 font-style:italic;
 position: absolute;
-right: -100%;
+right: 0%;
 opacity: 0;
 top:20%;
 transition: all .60s ease-in-out;
 
 }
 
+.rightcolumn a:hover{
+  font-size: 45px;
+  transition: all .60s ease-in-out;
+}
+
 .enter-left{
   position: absolute;
-  right:5%;
+  right:10%;
   opacity: 1;
 }
 
-.menuvoice{
-  padding-top: 5%;
-  padding-left: 40%;
-}
-
-.active{
+.active {
 padding-left: 0%;
-color: #000;
+font-size: 45px;
+color: #000 !important;
 -webkit-text-stroke-width:2.5px;
 -webkit-text-stroke-color:white;
 
+}
+
+.active a:hover{
+  color: white !important;
 }
 
 .back a{
@@ -227,16 +218,18 @@ color: #000;
   padding:0px;
   margin-left: 25%;
   margin-right: 25%;
-  font-size: 40px;
+  font-size: 20px;
   text-align: left;
   position: absolute;
-  top:0%;
-  left: -300%;
+  top:-50%;
+  left: 0%;
+  opacity:0;
   transition: all .60s ease-in-out;
 }
 
 .enter{
   position: absolute;
+  opacity: 1;
   left:4%;
 }
 
@@ -256,19 +249,13 @@ color: #000;
 
 }
 
-.artist p{
-  background-color: #000;
-}
 
-.description p{
-  background-color: #000;
-}
 
 .artwork{
 display: block;
 align-self: center;
 margin-top: 5%;
-margin-left: 10%;
+margin-left: 8%;
 margin-bottom: 5%;
 max-width: 33%;
 font-family: 'Druk Wide';
@@ -284,7 +271,7 @@ color: #fff;
 
 .artlist{
   width: 100%;
-  font-size: 50px;
+  font-size: 30px;
   text-transform: uppercase;
   z-index: 1;
 }
@@ -296,7 +283,7 @@ li :hover {
 }
 li{
   color: #fff;
-  padding-top: 3%;
+  padding-top: 4.5%;
 }
 
 ol {
@@ -305,7 +292,7 @@ ol {
   list-style: none;
   counter-reset: my-awesome-counter;
   padding-top: 5vh;
-  padding-bottom: 15vh;
+  padding-bottom: 20vh;
 }
 ol li {
   counter-increment: my-awesome-counter;
@@ -350,9 +337,7 @@ section h1 {
 }
 
 
-#thanks {
-  background-color: ;
-}
+
 #thanks::after {
   content: none;
 }
@@ -404,7 +389,6 @@ section h1 {
 
 
 #section10 a {
-  background-color: ;
 
   padding-top: 60px;
 }
@@ -436,8 +420,26 @@ section h1 {
 
 
 
+#bg-white{
+  width:100%;
+  height:100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -9999;
+}
+
+#bg-black{
+  width:100%;
+  height:100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -9999;
+}
 
 #defaultCanvas0 {
   width: 100vw !important;
-
 }
