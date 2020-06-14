@@ -14,6 +14,8 @@
 
 *{
   font-family:'Druk Wide';
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -86,13 +88,15 @@ a:hover{
 }
 
 .list-item.left img{
-  left:-100%;
-  transform:rotateZ(45deg);
+  left: 5%;
+  opacity: 0;
+  transform:rotateZ(90deg);
 }
 
 .list-item.right img{
-  right:-100%;
-  transform:rotateZ(-45deg);
+  right: 5%;
+  opacity: 0;
+  transform:rotateZ(-90deg);
 }
 
 .list-item:focus{
@@ -100,13 +104,15 @@ a:hover{
 }
 
 .list-item.left:hover img{
-  left: 20%;
+  left: 25%;
   opacity: 1;
+    transform:rotateZ(-30deg);
 }
 
 .list-item.right:hover img{
-  right: 20%;
+  right: 25%;
   opacity: 1;
+  transform:rotateZ(+30deg);
 }
 
 
@@ -151,6 +157,7 @@ width: 100vw;
 
 .graphic-list{
 padding: 0 ;
+background-color: black;
 }
 .card-body{
   display: flex;
@@ -293,9 +300,12 @@ li{
 }
 
 ol {
+  margin-bottom: 0% !important;
   background-color: #000
   list-style: none;
   counter-reset: my-awesome-counter;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
 }
 ol li {
   counter-increment: my-awesome-counter;
@@ -309,12 +319,6 @@ ol li::before {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   color: #000;
-  padding-right:1%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 section {
@@ -432,8 +436,8 @@ section h1 {
 
 
 
-#bg-black {
-z-index: 9999;
-width: 100%;
-height: 100%;
+
+#defaultCanvas0 {
+  width: 100vw !important;
+
 }
