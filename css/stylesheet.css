@@ -104,13 +104,13 @@ a:hover{
 }
 
 .list-item.left:hover img{
-  left: 25%;
+  left: 20%;
   opacity: 1;
     transform:rotateZ(-30deg);
 }
 
 .list-item.right:hover img{
-  right: 25%;
+  right: 20%;
   opacity: 1;
   transform:rotateZ(+30deg);
 }
