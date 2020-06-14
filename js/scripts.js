@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 setInterval (function(){
-  $('.rightcolumn').addClass('enter-left');
+  $('.art-name').addClass('enter-left');
 }, 100);
 
 setInterval (function(){
