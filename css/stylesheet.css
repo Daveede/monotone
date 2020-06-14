@@ -153,6 +153,28 @@ background-color: black;
 .cardrow{
   margin-top: 5%;
 }
+/*--------------------INIZIO ABOUTUS--------------------*/
+.wrapper{
+  margin-top: 0;
+  padding:0;
+}
+
+.col-sm{
+  display: flex;
+  justify-content: center!important;
+
+}
+
+.card-img-top{
+  display: flex;
+  justify-content: center!important;
+}
+
+.card-body{
+  display: flex;
+  justify-content: center!important;
+}
+
 
 /*--------------------INIZIO DETTAGLIO--------------------*/
 .detail{
@@ -280,6 +302,11 @@ color: #fff;
   text-transform: uppercase;
   z-index: 1;
 }
+
+.black{
+  background-color: black;
+}
+
 
 li :hover {
   color: #000;
