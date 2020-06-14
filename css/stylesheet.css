@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');*/
 
 @font-face {
   font-family: 'Druk Wide';
@@ -39,6 +39,9 @@ a:hover{
   cursor: pointer !important;
 }
 
+.black{
+  background-color: black;
+}
 
 .monotone h1{
   margin:50px;
@@ -69,14 +72,14 @@ a:hover{
   pointer-events: none;
 }
 
-.cursor.big{
+/*.cursor.big{
   width: 80px;
   height: 80px;
-}
+}*/
 
+/*---------------INIZIO INDEX---------------------*/
 
 .list-item img{
-
   width:150px;
   height: auto;
   position: absolute;
@@ -137,21 +140,48 @@ width: 100vw;
   color: white;
 }
 
-.cardcontainer{
-  display: flex;
-}
-
 .graphic-list{
 padding: 0 ;
 background-color: black;
 }
-.card-body{
-  display: flex;
-  padding:0;
+
+.artlist{
+  width: 100%;
+  font-size: 30px;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
-.cardrow{
-  margin-top: 5%;
+li :hover {
+  color: #000;
+  -webkit-text-stroke-width:2.5px;
+  -webkit-text-stroke-color:white;
+}
+li{
+  color: #fff;
+  padding-top: 4.5%;
+}
+
+ol {
+  margin-bottom: 0% !important;
+  background-color: #000
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding-top: 5vh;
+  padding-bottom: 20vh;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) "  ";
+  color: #fff ;
+  font-weight: bold;
+  font-size: 20px;
+  vertical-align: super;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: #000;
 }
 /*--------------------INIZIO ABOUTUS--------------------*/
 .wrapper{
@@ -173,6 +203,42 @@ background-color: black;
 .card-body{
   display: flex;
   justify-content: center!important;
+}
+
+
+.card{
+  background-color: #000;
+}
+
+.card-body{
+  display: flex;
+  padding:0;
+}
+
+.cardrow{
+  margin-top: 5%;
+}
+
+.cardtitle{
+  display: inline-flex;
+  align-self: center;
+  text-align: center;
+  margin-top: 10%;
+  font-family: 'Druk wide';
+  font-size: 17px;
+  color:#fff;
+
+}
+
+
+.artwork{
+display: block;
+align-self: center;
+margin-left: 8%;
+max-width: 33%;
+font-family: 'Druk Wide';
+color: #fff;
+
 }
 
 
@@ -209,27 +275,12 @@ transition: all .60s ease-in-out;
   opacity: 1;
 }
 
-/*.active {
-padding-left: 0%;
-font-size: 45px;
-color: #000 !important;
--webkit-text-stroke-width:2.5px;
--webkit-text-stroke-color:white;
-
-}*/
-
-.active a:hover{
-  color: white !important;
-}
-
 
 .header{
   margin-top: 1.5%;
 }
 
-.footer{
-  margin-bottom: 1.5%;
-}
+
 
 .menu a{
 position: relative;
@@ -271,85 +322,9 @@ margin-left: 76% !important;
   left:16%;
 }
 
-.card{
-  background-color: #000;
-}
-
-.cardtitle{
-  /* padding-left: 15%; */
-  display: inline-flex;
-  align-self: center;
-  text-align: center;
-  margin-top: 10%;
-  font-family: 'Druk wide';
-  font-size: 17px;
-  color:#fff;
-
-}
 
 
-
-.artwork{
-display: block;
-align-self: center;
-margin-left: 8%;
-max-width: 33%;
-font-family: 'Druk Wide';
-color: #fff;
-
-}
-
-
-.detailrow{
-  height: 100%;
-
-}
-
-.artlist{
-  width: 100%;
-  font-size: 30px;
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-.black{
-  background-color: black;
-}
-
-
-li :hover {
-  color: #000;
-  -webkit-text-stroke-width:2.5px;
-  -webkit-text-stroke-color:white;
-}
-li{
-  color: #fff;
-  padding-top: 4.5%;
-}
-
-ol {
-  margin-bottom: 0% !important;
-  background-color: #000
-  list-style: none;
-  counter-reset: my-awesome-counter;
-  padding-top: 5vh;
-  padding-bottom: 20vh;
-}
-ol li {
-  counter-increment: my-awesome-counter;
-}
-ol li::before {
-  content: counter(my-awesome-counter) "  ";
-  color: #fff ;
-  font-weight: bold;
-  font-size: 20px;
-  vertical-align: super;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  color: #000;
-}
-
-section {
+/*section {
   position:relative;
   width: 100%;
   height: 22%;
@@ -458,9 +433,9 @@ section h1 {
   animation: sdb10 2s infinite;
   box-sizing: border-box;
 }
+*/
 
-
-
+/*-------------------INIZIO BACKGROUND----------------------*/
 #bg-white{
   width:100%;
   height:100%;
