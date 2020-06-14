@@ -17,11 +17,11 @@ class Particle {
   }
 
 // setting the particle in motion.
-  moveParticle() {
+moveParticle() {
     if(this.x < 0 || this.x > width)
       this.xSpeed*=-1;
-    if(this.y < 0)
-      ;
+    if(this.y < 0 || this.y > height)
+      this.y = random(0,height);
     this.x+=this.xSpeed;
     this.y+=this.ySpeed;
   }
@@ -36,7 +36,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('bg-black');
   canvas.style('z-index', '0');
-  for(let i = 0;i<width/6;i++){
+  for(let i = 0;i<width/20;i++){
     particles.push(new Particle());
   }
 }
