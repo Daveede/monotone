@@ -5,8 +5,8 @@ class Particle {
     this.x = random(0,width);
     this.y = random(0,height);
     this.r = 4;
-    this.xSpeed = random(-2,1.5);
-    this.ySpeed = random(-1,1.5);
+    this.xSpeed = random(-1,1);
+    this.ySpeed = random(-1,1);
   }
 
 // creation of a particle.
@@ -36,7 +36,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('bg-black');
   canvas.style('z-index', '0');
-  for(let i = 0;i<width/20;i++){
+  for(let i = 0;i<width/20;i++){ //aumentare il numero per diminuire le particelle
     particles.push(new Particle());
   }
 }
