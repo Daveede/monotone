@@ -171,21 +171,6 @@ padding: 0 ;
   align-items: center;
 }
 
-.leftcolumn{
-color: #fff;
-font-size: 40px;
-position: relative;
-display: block;
-}
-
-.leftcolumn .inner-wrapper{
-padding-top: 3%;
-padding-left: 3%;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translateX(-50%) translateY(-50%);
-}
 
 .rightcolumn{
 padding-top: 5%;
@@ -197,6 +182,7 @@ position: absolute;
 right: -100%;
 opacity: 0;
 top:20%;
+transition: all .60s ease-in-out;
 
 }
 
@@ -221,7 +207,7 @@ color: #000;
 
 .back a{
   position: absolute;
-  top:5%;
+  top:3%;
   left:2%;
   color: white!important;
 }
@@ -229,12 +215,22 @@ color: #000;
 .back a:hover{
   -webkit-text-stroke-width:0px;
 }
+
 .artist{
   padding:0px;
   margin-left: 25%;
   margin-right: 25%;
   font-size: 40px;
   text-align: left;
+  position: absolute;
+  top:0%;
+  left: -300%;
+  transition: all .60s ease-in-out;
+}
+
+.enter{
+  position: absolute;
+  left:4%;
 }
 
 .card{

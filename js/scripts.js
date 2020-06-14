@@ -2,9 +2,11 @@ $(document).ready(function() {
 
 setInterval (function(){
   $('.rightcolumn').addClass('enter-left');
-}, 1000);
+}, 100);
 
-
+setInterval (function(){
+  $('.artist').addClass('enter');
+}, 100);
 
 
 
