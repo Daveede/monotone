@@ -160,17 +160,15 @@ background-color: black;
   max-height: 100%;
   margin: 0px;
   padding: 0px;
-  display: flex;
   align-items: center;
 }
 
 
 .rightcolumn{
-padding-top: 5%;
-padding-left: 8%;
+padding-top: 12%;
 color: #fff;
-font-size: 40px;
-font-style:italic;
+font-size: 45px;
+text-align: center;
 position: absolute;
 right: 0%;
 opacity: 0;
@@ -190,23 +188,33 @@ transition: all .60s ease-in-out;
   opacity: 1;
 }
 
-.active {
+/*.active {
 padding-left: 0%;
 font-size: 45px;
 color: #000 !important;
 -webkit-text-stroke-width:2.5px;
 -webkit-text-stroke-color:white;
 
-}
+}*/
 
 .active a:hover{
   color: white !important;
 }
 
+
+.header{
+  margin-top: 1.5%;
+}
+
+.footer{
+  margin-bottom: 1.5%;
+}
+
 .menu a{
-  position: absolute;
-  color: white!important;
-  margin:1.5%;
+position: relative;
+width: 100%;
+color: white!important;
+margin:1.5%;
 }
 
 .menu a:hover{
@@ -215,27 +223,31 @@ color: #000 !important;
 
 
 .alignright{
-margin-left: 80%;
+text-align: right;
+margin-left: 76% !important;
 }
 
 
 .artist{
   padding:0px;
-  margin-left: 25%;
-  margin-right: 25%;
-  font-size: 20px;
+  font-size: 40px;
+  margin-top: -20%;
   text-align: left;
   position: absolute;
-  top:-30%;
   left: 0%;
   opacity:0;
+  transition: all .60s ease-in-out;
+}
+
+.artist a:hover{
+  font-size: 45px;
   transition: all .60s ease-in-out;
 }
 
 .enter{
   position: absolute;
   opacity: 1;
-  left:4%;
+  left:16%;
 }
 
 .card{
@@ -259,9 +271,7 @@ margin-left: 80%;
 .artwork{
 display: block;
 align-self: center;
-margin-top: 5%;
 margin-left: 8%;
-margin-bottom: 5%;
 max-width: 33%;
 font-family: 'Druk Wide';
 color: #fff;
