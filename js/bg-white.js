@@ -3,7 +3,7 @@ class Particle {
 // speed of a particle in both the co-ordinates axes.
   constructor(){
     this.x = random(0,width);
-    this.y = height+4;
+    this.y = random(0,height);
     this.r = 4;
     this.xSpeed = random(-2,1.5);
     this.ySpeed = random(-1,1.5);
