@@ -191,8 +191,6 @@ background-color: black;
 padding-top: 12%;
 color: #fff;
 font-size: 40px;
-text-align: center;
-position: absolute;
 right: 0%;
 opacity: 0;
 top:20%;
@@ -252,6 +250,16 @@ color: white!important;
 
 .wrapper{
   position:relative;
+}
+
+.artname{
+  padding:0px;
+  font-size: 40px;
+  margin-top: -20%;
+  position: absolute;
+  left: 0%;
+  opacity:0;
+  transition: all .60s ease-in-out;
 }
 
 .artist{
