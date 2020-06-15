@@ -178,12 +178,13 @@ background-color: black;
 
 /*--------------------INIZIO DETTAGLIO--------------------*/
 .detail{
+  height: 100%
   width:100%;
-  max-height: 100%;
   margin: 0px;
   padding: 0px;
   align-items: center;
 }
+
 
 
 .art-name{
@@ -227,15 +228,20 @@ color: #000 !important;
   margin-top: 1.5%;
 }
 
-.footer{
-  margin-bottom: 1.5%;
+
+.menu{
+  margin-top: 1.5%;
+
+  padding: 0% 2% 0% 2%;
+
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu a{
 position: relative;
-width: 100%;
 color: white!important;
-margin:2.5%;
 }
 
 .menu a:hover{
@@ -243,17 +249,16 @@ margin:2.5%;
 }
 
 
-.alignright{
-text-align: right;
-margin-left: 76% !important;
-}
 
+.wrapper{
+  position:relative;
+}
 
 .artist{
   padding:0px;
   font-size: 40px;
   margin-top: -20%;
-  text-align: left;
+  text-align: right;
   position: absolute;
   left: 0%;
   opacity:0;
@@ -276,7 +281,6 @@ margin-left: 76% !important;
 }
 
 .cardtitle{
-  /* padding-left: 15%; */
   display: inline-flex;
   align-self: center;
   text-align: center;
